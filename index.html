@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="Android application" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#90C048" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Perpro's Android development</title>
+  <style>
+  	html,a{color:white;}
+  	html,footer{background:#90C048;}
+  	html{height:100%;}
+  	body{border-left:#eeeeee solid 2px;font-family:monospace;font-size:13pt;margin:0 auto;max-width:800px;min-height:100%;}
+    header{padding:40px;text-align:center;}
+    h1,h2,h3{font-variant-caps:small-caps;}
+    main{padding:0px 1em;}
+    section p{text-align:justify;}
+    footer{width:100%;bottom:0;left:0;display:block;position:fixed;}
+    articl{white-space:nowrap;}
+    article h1{margin:0;}
+    article > div{display:inline-block;}
+    div.icon{border-radius:20%;box-shadow:0 1px 3px 0 rgba(60,64,67,.3),0 4px 8px 3px rgba(60,64,67,.15);height:40px;overflow: hidden;width:40px;vertical-align:top;}
+    div.title {margin:-40px 0 0 50px;}
+    div.title img{max-height:2.5em;}
+    img{max-height:100%;max-width:100%;}
+    @media only screen and (min-width:800px){
+      main{padding:0px 40px;}
+      div.icon{height:180px;width:180px;}
+      div.title{margin:0 0 0 2em;}
+      main{padding-bottom:45px;}
+      footer span{display:block;background:url("images/kocke_w.png") no-repeat transparent;height:25px;width:80px;margin:10px auto;}
+    }
+  </style>
+</head>
+<body>
+
+<header>
+<img src="images/perpro_w.png" alt=">>PERPRO logo" />
+<h1>Android development</h1>
+</header>
+
+<main>
+
+<article>
+<div class="icon"><img src="images/utmp_basic.png" alt="utmp_basic" /></div>
+<div class="title">
+  <h1>UTMP Basic</h1>
+  <p><strong>Displays value of a connected USB Thermometer</strong></p>
+  <p><a href="https://play.google.com/store/apps/details?id=si.perpro.android.utmp_basic"><img src="images/googleplay.png" alt="Our app is now available on Google Play." /></a></p>
+</div>
+</article>
+
+<section>
+<h3>Supported devices</h3>
+<ul>
+<li>All <a href="https://usbtemp.com/">usbtemp USB Thermometers</a></li>
+</ul>
+
+<h3>Instructions</h3>
+<p>Since most newer mobile phones have USB type-C connector an OTG adapter cable to USB type-A is needed. USB version 2.0 is sufficient.</p>
+<p>After the thermometer is connected an Android powered phone a pop-up is displayed asking for user-permission whether to allow UTMP Basic to handle the thermometer. When approved UTMP Basic is started and values are displayed.</p>
+<p>After start of the application a list of detected devices is displayed. Device is selected by taping on it.</p>
+<p>When value is being displayed an unit (Celsius or Fahrenheit) could be selected in the menu upper-right.</p>
+</section>
+
+</main>
+
+<footer><span></span></footer>
+
+</body>
+</html>
