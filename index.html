@@ -14,11 +14,10 @@
     html,a{color:white;}
     html,footer{background:#90C048;}
     html{height:100%;}
-    body{border-left:#eeeeee solid 2px;font-family:'Raleway';font-size:13pt;margin:0 auto;max-width:800px;min-height:100%;}
-    header{padding:40px;text-align:center;}
+    body{font-family:'Raleway';font-size:13pt;margin:0 auto;max-width:800px;min-height:100%;padding:0 1ex;}
+    header{padding:20px 0;text-align:center;}
     header h1{font-size:4vw;margin:0;}
     h1,h2,h3{font-variant-caps:small-caps;}
-    main{padding:0px 1em;}
     section p{text-align:justify;}
     article h1{margin:0;}
     article > div{display:block;}
@@ -27,17 +26,19 @@
     div.title img{vertical-align:middle;}
     div.title ul{list-style:none;padding:0;}
     div.title ul li+li{padding:1ex 0 0 0;}
-    img{max-height:100%;max-width:100%;}
+    img{max-width:100%;}
+    footer {padding:10px 0;}
+    footer span{display:block;background:url("images/qubes_w.png") no-repeat transparent;height:25px;width:80px;margin:0 auto;}
     @media only screen and (min-width:800px){
+      body{padding:0 20px;}
+      header {padding:20px 0;}
       header h1{font-size:200%;}
-      main{padding:0px 40px;}
+      header img{height:80px;width:780px;}
       article > div{display:inline-block;}
       div.icon{height:180px;margin:10px 0;width:180px;}
       div.title{margin:0 0 0 2em;}
       div.title ul li{display:inline;}
       div.title ul li+li{padding:0 0 0 2em;}
-      footer {padding:10px 0;}
-      footer span{display:block;background:url("images/qubes_w.png") no-repeat transparent;height:25px;width:80px;margin:0 auto;}
     }
   </style>
 </head>
