@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="description" content="List of Android applications developed by Perpro" />
+  <meta name="description" content="List of Android applications developed by Perpro available for download, currenty available UTMP Basic" />
   <meta name="robots" content="index, follow" />
   <meta name="theme-color" content="#90C048" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,14 +12,12 @@
   </style>
   <style>
     html,a{color:white;}
-    html,footer{background:#90C048;}
-    html{height:100%;}
+    html{background:#90C048;height:100%;}
     body{font-family:'Raleway';font-size:13pt;margin:0 auto;max-width:800px;min-height:100%;padding:0 1ex;}
     header{padding:20px 0;text-align:center;}
     header h1{font-size:4vw;margin:0;}
     h1,h2,h3{font-variant-caps:small-caps;}
     section p{text-align:justify;}
-    article h1{margin:0;}
     article > div{display:block;}
     div.icon{border-radius:20%;box-shadow:0 1px 3px 0 rgba(60,64,67,.3),0 4px 8px 3px rgba(60,64,67,.15);height:40px;overflow:hidden;width:40px;vertical-align:middle;}
     div.title {margin:-40px 0 0 60px;vertical-align:middle;}
@@ -27,7 +25,7 @@
     div.title ul{list-style:none;padding:0;}
     div.title ul li+li{padding:1ex 0 0 0;}
     img{max-width:100%;}
-    footer {padding:10px 0;}
+    footer{padding:10px 0;}
     footer span{display:block;background:url("images/qubes_w.png") no-repeat transparent;height:25px;width:80px;margin:0 auto;}
     @media only screen and (min-width:800px){
       body{padding:0 20px;}
@@ -45,16 +43,16 @@
 <body>
 
 <header>
-<img src="images/perpro_w.png" alt=">>PERPRO logo" />
+<img src="images/perpro_w.png" alt="&gt;&gt;PERPRO logo" />
 <h1>Android Application Development</h1>
 </header>
 
 <main>
 
-<article>
-<div class="icon"><img src="images/utmp_basic.png" alt="utmp_basic" /></div>
+<article id="utmp_basic">
+<div class="icon"><img src="images/utmp_basic.png" alt="utmp_basic logo" /></div>
 <div class="title">
-  <h1>UTMP Basic</h1>
+  <h2>UTMP Basic</h2>
   <p><strong>Displays value of a connected USB Thermometer</strong></p>
   <ul>
     <li><a href="https://play.google.com/store/apps/details?id=si.perpro.android.utmp_basic" rel="noopener" target="_blank"><img src="images/googleplay.png" alt="UTMP Basic is now available on Google Play." /></a></li>
@@ -64,24 +62,24 @@
 </article>
 
 <section>
-<h2>Supported devices</h2>
+<h3>Supported devices</h3>
 <ul>
 <li>All <a href="https://usbtemp.com/" rel="noopener" target="_blank">usbtemp USB Thermometers</a></li>
 </ul>
 </section>
 
 <section>
-<h2>Prerequisites</h2>
+<h3>Prerequisites</h3>
 <p>
 Since most newer Android powered devices have USB type-C connector an OTG adapter cable to USB type-A is needed. USB version 2.0 of the adapter cable is sufficient. Any connected device draws power from Android device, so its battery will be drained a little sooner. Device <strong>support of USB host mode is mandatory</strong>; device that does not meet this requirement cannot install the application from Google Play.
 </p>
-<h2>Startup</h2>
+<h3>Startup</h3>
 <p>
-After the thermometer is connected to an Android powered device and the application is already installed <a href="images/app_notification.png">a notification</a> is displayed saying a new device has been connected. After notification confirmation UTMP Basic application is started into <a href="images/app_readout.png"> readout mode</a>.
+After the thermometer is connected to an Android powered device and the application is already installed <a href="images/app_notification.png">a notification</a> is displayed saying a new device has been connected. After notification confirmation UTMP Basic application is started directly into <a href="images/app_readout.png">readout mode</a>.
 </p>
-<h2>Usage</h2>
+<h3>Instructions</h3>
 <p>
-Depending on startup mode application may ask for <a href="images/app_permission.png">user approval to obtain permission for accessing USB device</a> – this is Android standard dialog. After confirmation current value of measured temperature is displayed.
+Depending on startup mode application may ask for <a href="images/app_permission.png">user approval to obtain permission for accessing detected USB device</a> – this is Android standard dialog. After confirmation current value of measured temperature is displayed.
 </p>
 <p>
 When value is being displayed an unit (Celsius or Fahrenheit) could be selected in <a href="images/app_menu.png">the menu upper-right</a>. If needed the probe precision could be also selected, but for now this decision doesn't save anywhere. A detection of new devices could also be started in the menu.
@@ -90,7 +88,9 @@ When value is being displayed an unit (Celsius or Fahrenheit) could be selected 
 
 </main>
 
-<footer><span></span></footer>
+<footer>
+  <span></span>
+</footer>
 
 </body>
 </html>
