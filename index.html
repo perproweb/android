@@ -21,25 +21,24 @@
     h1,h2,h3{font-variant-caps:small-caps;}
     section p{text-align:justify;}
     article > div{display:block;}
-    div.icon{border-radius:20%;box-shadow:0 1px 3px 0 rgba(60,64,67,.3),0 4px 8px 3px rgba(60,64,67,.15);height:40px;overflow:hidden;width:40px;vertical-align:middle;}
-    div.title {margin:-40px 0 0 60px;vertical-align:middle;}
-    div.title h2{margin:0;}
-    div.title img{vertical-align:middle;}
-    div.title ul{list-style:none;padding:0;}
-    div.title ul li+li{padding:1ex 0 0 0;}
+    .icon{border-radius:20%;box-shadow:0 1px 3px 0 rgba(60,64,67,.3),0 4px 8px 3px rgba(60,64,67,.15);height:40px;overflow:hidden;width:40px;vertical-align:middle;}
+    .title{margin:-40px 0 0 60px;vertical-align:middle;}
+    .title h2{margin:0;}
+    .title img{vertical-align:middle;}
+    .title ul{list-style:none;padding:0;}
+    .title ul li+li{padding:1ex 0 0 0;}
+    .title a img{display:inline-block;height:44px;width:144px;}
     img{max-width:100%;}
     footer{padding:10px 0;}
     footer span{background:url("images/qubes_w.png") no-repeat transparent;background-size:contain;display:block;height:25px;margin:0 auto;width:80px;}
     @media only screen and (min-width:800px){
-      header {padding:20px 0;}
       header h1{font-size:200%;}
-      header img{height:80px;width:780px;}
       article > div{display:inline-block;}
-      div.icon{height:180px;margin:10px 0;width:180px;}
-      div.title{margin:0 0 0 2em;}
-      div.title h2{margin:1ex 0;}
-      div.title ul li{display:inline;}
-      div.title ul li+li{padding:0 0 0 2em;}
+      .icon{height:180px;margin:10px 0;width:180px;}
+      .title{margin:0 0 0 2em;}
+      .title h2{margin:1ex 0;}
+      .title ul li{display:inline;}
+      .title ul li+li{padding:0 0 0 1em;}
     }
     @media only screen and (-webkit-min-device-pixel-ratio:1.5),
     only screen and (-o-min-device-pixel-ratio:3/2),
@@ -47,6 +46,7 @@
     only screen and (min-device-pixel-ratio:1.5){
       header span{background-image:url("images/perpro_w@2x.png");}
       footer span{background-image:url("images/qubes_w@2x.png");}
+      .title a img{background-image:url("images/googleplay@2x.png");background-size:contain;box-sizing:border-box;padding-left:144px;}
     }
   </style>
 </head>
