@@ -8,45 +8,49 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Perpro Android Application Development</title>
   <style>
-    @font-face {font-display:swap;font-style:normal;font-weight:400;font-family:'Raleway';src:url('fonts/raleway.eot');src:local(''),url('fonts/raleway.eot?#iefix')format('embedded-opentype'),url('fonts/raleway.woff2')format('woff2'),url('fonts/raleway.ttf')format('truetype'),url('fonts/raleway.svg#Raleway')format('svg');}
+    @font-face{font-display:swap;font-style:normal;font-weight:400;font-family:'Raleway';src:url('fonts/raleway.eot');src:local(''),url('fonts/raleway.eot?#iefix')format('embedded-opentype'),url('fonts/raleway.woff2')format('woff2'),url('fonts/raleway.ttf')format('truetype'),url('fonts/raleway.svg#Raleway')format('svg');}
   </style>
   <style>
     html,a{color:white;}
     html{background:#90C048;height:100%;}
     body{font-family:"Raleway";font-size:13pt;margin:0 auto;max-width:800px;min-height:100%;padding:0 1ex;}
     header{padding:20px 0;text-align:center;}
-    header h1{font-size:4vw;margin:0;}
-    header span{background:url("images/perpro_w.png") no-repeat transparent;background-size:contain;display:block;height:79px;margin:0 auto;max-width:100%;width:780px;}
+    header h1{font-size:130%;margin:0;}
+    header span{background:url("images/perpro_w.png") no-repeat transparent;background-size:contain;background-position:center;display:block;height:79px;margin:0 auto;max-width:100%;width:780px;}
     span noscript{visibility:hidden;}
     h1,h2,h3{font-variant-caps:small-caps;}
     section p{text-align:justify;}
     article > div{display:block;}
-    .icon{border-radius:20%;box-shadow:0 1px 3px 0 rgba(60,64,67,.3),0 4px 8px 3px rgba(60,64,67,.15);height:40px;overflow:hidden;width:40px;vertical-align:middle;}
+    #logo{border-radius:20%;box-shadow:0 1px 3px 0 rgba(60,64,67,.3),0 4px 8px 3px rgba(60,64,67,.15);overflow:hidden;vertical-align:middle;}
+    #logo,#logo img{height:40px;width:40px;}
     .title{margin:-40px 0 0 60px;vertical-align:middle;}
     .title h2{margin:0;}
     .title img{vertical-align:middle;}
     .title ul{list-style:none;padding:0;}
     .title ul li+li{padding:1ex 0 0 0;}
-    .title a img{display:inline-block;height:44px;width:144px;}
-    img{max-width:100%;}
+    #gp{display:inline-block;height:44px;width:144px;}
     footer{padding:10px 0;}
     footer span{background:url("images/qubes_w.png") no-repeat transparent;background-size:contain;display:block;height:25px;margin:0 auto;width:80px;}
     @media only screen and (min-width:800px){
       header h1{font-size:200%;}
       article > div{display:inline-block;}
-      .icon{height:180px;margin:10px 0;width:180px;}
+      #logo{margin:10px 0;}
+      #logo,#logo img{height:180px;width:180px;}
       .title{margin:0 0 0 2em;}
       .title h2{margin:1ex 0;}
       .title ul li{display:inline;}
       .title ul li+li{padding:0 0 0 1em;}
     }
-    @media only screen and (-webkit-min-device-pixel-ratio:1.5),
-    only screen and (-o-min-device-pixel-ratio:3/2),
-    only screen and (min--moz-device-pixel-ratio:1.5),
-    only screen and (min-device-pixel-ratio:1.5){
+    @media only screen and (-webkit-min-device-pixel-ratio:1.5),only screen and (-o-min-device-pixel-ratio:3/2),only screen and (min--moz-device-pixel-ratio:1.5),only screen and (min-device-pixel-ratio:1.5){
       header span{background-image:url("images/perpro_w@2x.png");}
       footer span{background-image:url("images/qubes_w@2x.png");}
-      .title a img{background-image:url("images/googleplay@2x.png");background-size:contain;box-sizing:border-box;padding-left:144px;}
+      #gp{background-image:url("images/googleplay@2x.png");background-size:contain;box-sizing:border-box;padding-left:144px;}
+      @media only screen and (min-width:800px){
+        #logo img{background-image:url("images/utmp_basic@2x.png");background-size:contain;box-sizing:border-box;padding-left:180px;}
+      }
+    }
+    @media print{
+      header span,footer{display:none;}
     }
   </style>
 </head>
@@ -60,12 +64,12 @@
 <main>
 
 <article id="utmp_basic">
-<div class="icon"><img src="images/utmp_basic.png" alt="utmp_basic logo" /></div>
+<div id="logo"><img src="images/utmp_basic.png" alt="utmp_basic logo" /></div>
 <div class="title">
   <h2>UTMP Basic</h2>
   <p><strong>Displays value of a connected USB Thermometer</strong></p>
   <ul>
-    <li><a href="https://play.google.com/store/apps/details?id=si.perpro.android.utmp_basic" rel="noopener" target="_blank"><img src="images/googleplay.png" alt="UTMP Basic is now available on Google Play." /></a></li>
+    <li><a href="https://play.google.com/store/apps/details?id=si.perpro.android.utmp_basic" rel="noopener" target="_blank"><img src="images/googleplay.png" id="gp" alt="UTMP Basic is now available on Google Play." /></a></li>
     <li>APK download: <a href="downloads/utmp_basic_v0-2-1.apk">ver 0.2.1</a></li>
   </ul>
 </div>
