@@ -70,9 +70,27 @@
   <p><strong>Displays value of a connected USB Thermometer</strong></p>
   <ul>
     <li><a href="https://play.google.com/store/apps/details?id=si.perpro.android.utmp_basic" rel="noopener" target="_blank"><img src="images/googleplay.png" id="gp" alt="UTMP Basic is now available on Google Play." /></a></li>
-    <li>APK download: <a href="downloads/utmp_basic_v0-2-2.apk">ver 0.2.2</a></li>
+    <li>APK download: <a href="downloads/utmp_basic_v0-2-3.apk">ver 0.2.3</a></li>
   </ul>
 </div>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "UTMP Basic",
+  "operatingSystem": "Android",
+  "applicationCategory": "UtilitiesApplication",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.5",
+    "ratingCount": "4"
+  },
+  "offers": {
+    "@type": "Offer",
+    "price": "0"
+  }
+}
+</script>
 </article>
 
 <section>
@@ -88,7 +106,7 @@
 
 <h3>Prerequisites</h3>
 <p>
-Since most newer Android powered devices have USB type-C connector an OTG adapter cable to USB type-A is needed. USB version 2.0 of the adapter cable is sufficient. Any connected device draws power from Android powered device, so when operating on a battery the battery will be drained a little sooner. Device's <strong>support of USB host mode is mandatory</strong>; an Android powered device that does not meet this requirement cannot install the application from Google Play.
+Since most newer Android powered devices have a USB type-C receptacle an OTG adapter cable to USB type-A receptacle is needed when the thermometer has a type-A plug. A USB version 2.0 of the adapter cable is sufficient. Any connected device draws power from Android powered device, so when operating on a battery the battery will be drained a little sooner. Device's <strong>support of USB host mode is mandatory</strong>; an Android powered device that does not meet this requirement cannot install the application from Google Play.
 </p>
 
 <h3>Startup</h3>
@@ -98,10 +116,10 @@ After the thermometer is connected to an Android powered device and the applicat
 
 <h3>Instructions</h3>
 <p>
-Depending on startup mode application may ask for <a href="images/app_permission.png">user approval to obtain permission for accessing detected USB thermometer</a> – this is Android standard dialog. After confirmation current value of measured temperature is displayed and the value is updated each second. Value's decimal separator depends on device's regional settings.
+Depending on startup mode application may ask for <a href="images/app_permission.png">user approval to obtain permission for accessing detected USB thermometer</a> – this is Android standard dialog. After confirmation current value of measured temperature is displayed and the value is updated each second. Value's decimal separator, date and time format depend on device's regional settings.
 </p>
 <p>
-When value is being displayed an unit (Celsius or Fahrenheit) could be selected in <a href="images/app_menu.png">the menu upper-right</a>. If needed the probe precision could be also selected, but for now this decision doesn't save anywhere. Once application has been started a detection of new device could also be started by selecting appropriate item in the application menu or when a new device, i.e. USB thermometer, has been connected.
+When value is being displayed an unit (Celsius or Fahrenheit) could be selected in <a href="images/app_menu.png">the menu upper-right</a>. If needed the probe precision could be also selected, but for now this decision isn't saved anywhere. Once application has been started a detection of new device could also be started by selecting appropriate item in the application menu or when a new device, i.e. USB thermometer, has been connected.
 </p>
 
 </section>
@@ -109,7 +127,7 @@ When value is being displayed an unit (Celsius or Fahrenheit) could be selected 
 </main>
 
 <footer>
-  <span></span>
+  <span><noscript>perpro 2022</noscript></span>
 </footer>
 
 </body>
