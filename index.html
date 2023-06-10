@@ -16,13 +16,14 @@
   <style>
     html,a{color:white;}
     html{background:#90C048;height:100%;}
-    body{font-family:"Raleway";font-size:13pt;margin:0 auto;max-width:800px;min-height:100%;padding:0 1ex;}
+    body{font-family:"Raleway";font-size:14pt;margin:0 auto;max-width:800px;min-height:100%;padding:0 1ex;}
     header{padding:20px 0;text-align:center;}
     header h1{font-size:130%;margin:0;}
     header span{background:url("images/perpro_w.png") no-repeat transparent;background-size:contain;background-position:center;display:block;height:79px;margin:0 auto;max-width:100%;width:780px;}
     span noscript{visibility:hidden;}
     h1,h2,h3{font-variant-caps:small-caps;}
     section p{text-align:justify;}
+    p img{display:block;margin:0 auto;max-width:100%;padding:1em 0;}
     article > div{display:block;}
     #logo{border-radius:20%;box-shadow:0 1px 3px 0 rgba(60,64,67,.3),0 4px 8px 3px rgba(60,64,67,.15);overflow:hidden;vertical-align:middle;}
     #logo,#logo img{height:40px;width:40px;}
@@ -37,6 +38,7 @@
     @media only screen and (min-width:800px){
       header h1{font-size:200%;}
       article > div{display:inline-block;}
+      p img{padding:1em;}
       #logo{margin:10px 0;}
       #logo,#logo img{height:180px;width:180px;}
       .title{margin:0 0 0 2em;}
@@ -128,7 +130,9 @@ After the thermometer is connected to an Android powered device and the applicat
 
 <h3>Instructions</h3>
 <p>
-Depending on startup mode application may ask for <a href="images/app_permission.png">user approval to obtain permission for accessing detected USB thermometer</a> – this is Android standard dialog. After confirmation current value of measured temperature is displayed and the value is updated each second. Value's decimal separator, date and time format depend on device's regional settings.
+Depending on startup mode application may ask for user approval to obtain permission for accessing detected USB thermometer – this is Android standard dialog.
+<img src="images/app_permission_inline.png" alt="Android request to obtain permission for accessing detected USB thermometer" />
+After confirmation current value of measured temperature is displayed and the value is updated each second. Value's decimal separator, date and time format depend on device's regional settings.
 </p>
 <p>
 When value is being displayed an unit (Celsius or Fahrenheit) could be selected in <a href="images/app_menu.png">the menu upper-right</a>. If needed the probe precision could be also selected, but for now this decision isn't saved anywhere. Once application has been started a detection of new device could also be started by selecting appropriate item in the application menu or when a new device, i.e. USB thermometer, has been connected.
